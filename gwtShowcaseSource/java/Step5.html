@@ -1,0 +1,42 @@
+<pre>  /**
+   * The constants used in this Content Widget.
+   */
+  public static interface CwConstants extends Constants,
+      ContentWidget.CwConstants {
+    String cwStep5Description();
+
+    String cwStep5Name();
+  }
+
+  /**
+   * An instance of the constants.
+   */
+  private CwConstants constants;
+
+  /**
+   * Initialize this example.
+   */
+  @Override
+  public Widget onInitialize() {
+    // Create the panel used to layout the content
+    FlowPanel mainLayout = new FlowPanel();
+
+    Image image = new Image("images/steps/step-5.jpg");
+	mainLayout.add(image);
+	
+	String html = "&lt;hr /&gt;"
+		+ "&lt;span&gt;If the 2 sides in the right place are side-by-side, start with them in the back&lt;/span&gt;&lt;br /&gt;"
+		+ "&lt;span class=\"instructions\"&gt;Turn the cube upside down keeping the front in front so the top is up&lt;/span&gt;&lt;br /&gt;"
+		+ "&lt;img alt=\"Move right column down\" src=\"images/moves/move-right-down.gif\" /&gt; &lt;img alt=\"Move up row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move right column down\" src=\"images/moves/move-right-up.gif\" /&gt; &lt;img alt=\"Move front clockwise\" src=\"images/moves/move-front-clockwise.gif\" /&gt; &lt;img alt=\"Move up row right\" src=\"images/moves/move-bottom-right.gif\" /&gt; &lt;img alt=\"Move front counter-clockwise\" src=\"images/moves/move-front-counter-clockwise.gif\" /&gt; &lt;img alt=\"Move right column down\" src=\"images/moves/move-right-down.gif\" /&gt; &lt;img alt=\"Move up row right\" src=\"images/moves/move-bottom-right.gif\" /&gt; &lt;img alt=\"Move right column down\" src=\"images/moves/move-right-up.gif\" /&gt; &lt;img alt=\"Move up row right\" src=\"images/moves/move-bottom-right.gif\" /&gt; &lt;img alt=\"Move up row right\" src=\"images/moves/move-bottom-right.gif\" /&gt; &lt;br /&gt;"
+		+ "&lt;hr /&gt;"
+		+ "&lt;span&gt;If the 2 sides in the right place are diagonally opposite of each other, start with one in the front and one in the back&lt;/span&gt;&lt;br /&gt;"
+		+ "&lt;span class=\"instructions\"&gt;Turn the cube upside down keeping the front in front so the top is up&lt;/span&gt;&lt;br /&gt;"
+		+ "&lt;img alt=\"Move right column down\" src=\"images/moves/move-right-down.gif\" /&gt; &lt;img alt=\"Move up row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move right column down\" src=\"images/moves/move-right-up.gif\" /&gt; &lt;img alt=\"Move front clockwise\" src=\"images/moves/move-front-clockwise.gif\" /&gt; &lt;img alt=\"Move up row right\" src=\"images/moves/move-bottom-right.gif\" /&gt; &lt;img alt=\"Move up row right\" src=\"images/moves/move-bottom-right.gif\" /&gt; &lt;img alt=\"Move front counter-clockwise\" src=\"images/moves/move-front-counter-clockwise.gif\" /&gt; &lt;img alt=\"Move right column down\" src=\"images/moves/move-right-down.gif\" /&gt; &lt;img alt=\"Move up row right\" src=\"images/moves/move-bottom-right.gif\" /&gt; &lt;img alt=\"Move right column down\" src=\"images/moves/move-right-up.gif\" /&gt; &lt;img alt=\"Move up row right\" src=\"images/moves/move-bottom-right.gif\" /&gt; &lt;img alt=\"Move up row right\" src=\"images/moves/move-bottom-right.gif\" /&gt;"
+		+ "&lt;hr /&gt;";
+	mainLayout.add(new HTML(html));
+	
+    // Return the main layout
+    return mainLayout;
+  }
+
+</pre>

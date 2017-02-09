@@ -1,0 +1,38 @@
+<pre>  /**
+   * The constants used in this Content Widget.
+   */
+  public static interface CwConstants extends Constants,
+      ContentWidget.CwConstants {
+    String cwStep7Description();
+
+    String cwStep7Name();
+  }
+
+  /**
+   * An instance of the constants.
+   */
+  private CwConstants constants;
+
+  /**
+   * Initialize this example.
+   */
+  @Override
+  public Widget onInitialize() {
+    // Create the panel used to layout the content
+    FlowPanel mainLayout = new FlowPanel();
+
+    Image image = new Image("images/steps/step-7.jpg");
+	mainLayout.add(image);
+	
+	String html = "&lt;hr /&gt;"
+		+ "&lt;span&gt;The middle move (you may have to do this several times)&lt;/span&gt;&lt;br /&gt;"
+		+ "&lt;span class=\"instructions\"&gt;Turn the cube upside down keeping the front in front so the top is up&lt;/span&gt;&lt;br /&gt;"
+		+ "&lt;img alt=\"Move middle column top\" src=\"images/moves/move-middle-down.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move middle column down\" src=\"images/moves/move-middle-up.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move middle column top\" src=\"images/moves/move-middle-down.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move middle column down\" src=\"images/moves/move-middle-up.gif\" /&gt;"
+		+ "&lt;hr /&gt;";
+	mainLayout.add(new HTML(html));
+	
+    // Return the main layout
+    return mainLayout;
+  }
+
+</pre>

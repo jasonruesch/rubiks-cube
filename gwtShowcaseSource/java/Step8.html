@@ -1,0 +1,51 @@
+<pre>  /**
+   * The constants used in this Content Widget.
+   */
+  public static interface CwConstants extends Constants,
+      ContentWidget.CwConstants {
+    String cwStep8Description();
+
+    String cwStep8Name();
+  }
+
+  /**
+   * An instance of the constants.
+   */
+  private CwConstants constants;
+
+  /**
+   * Initialize this example.
+   */
+  @Override
+  public Widget onInitialize() {
+    // Create the panel used to layout the content
+    FlowPanel mainLayout = new FlowPanel();
+
+    Image image = new Image("images/steps/step-8.jpg");
+	mainLayout.add(image);
+	
+	String html = "&lt;hr /&gt;"
+		+ "&lt;span&gt;The middle move (for reference)&lt;/span&gt;&lt;br /&gt;"
+		+ "&lt;img alt=\"Move middle column down\" src=\"images/moves/move-middle-down.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move middle column up\" src=\"images/moves/move-middle-up.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move middle column down\" src=\"images/moves/move-middle-down.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move middle column up\" src=\"images/moves/move-middle-up.gif\" /&gt; &lt;br /&gt;"
+		+ "&lt;hr /&gt;"
+		+ "&lt;span&gt;Dedmore H Pattern&lt;/span&gt;&lt;br /&gt;"
+		+ "&lt;span class=\"instructions\"&gt;Turn the cube upside down so the top is up and the unfinished pieces in front and back&lt;/span&gt;&lt;br /&gt;"
+		+ "&lt;img alt=\"Move middle column down\" src=\"images/moves/move-middle-down.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move middle column up\" src=\"images/moves/move-middle-up.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move middle column down\" src=\"images/moves/move-middle-down.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move middle column up\" src=\"images/moves/move-middle-up.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move middle column down\" src=\"images/moves/move-middle-down.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move middle column up\" src=\"images/moves/move-middle-up.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move middle column down\" src=\"images/moves/move-middle-down.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move middle column up\" src=\"images/moves/move-middle-up.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move middle column down\" src=\"images/moves/move-middle-down.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move middle column up\" src=\"images/moves/move-middle-up.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;br /&gt;"
+		+ "&lt;hr /&gt;"
+		+ "&lt;span&gt;The 4 Pattern&lt;/span&gt;&lt;br /&gt;"
+		+ "&lt;span class=\"instructions\"&gt;Turn the cube upside down so the top is up, start with any side in front&lt;/span&gt;&lt;br /&gt;"
+		+ "&lt;img alt=\"Move middle column down\" src=\"images/moves/move-middle-down.gif\" /&gt; &lt;img alt=\"Move bottom row right\" src=\"images/moves/move-bottom-right.gif\" /&gt; &lt;img alt=\"Move bottom row right\" src=\"images/moves/move-bottom-right.gif\" /&gt; &lt;img alt=\"Move middle column up\" src=\"images/moves/move-middle-up.gif\" /&gt; &lt;img alt=\"Move bottom row right\" src=\"images/moves/move-bottom-right.gif\" /&gt; &lt;img alt=\"Move bottom row right\" src=\"images/moves/move-bottom-right.gif\" /&gt; &lt;img alt=\"Move middle column down\" src=\"images/moves/move-middle-down.gif\" /&gt; &lt;img alt=\"Move bottom row right\" src=\"images/moves/move-bottom-right.gif\" /&gt; &lt;img alt=\"Move middle column up\" src=\"images/moves/move-middle-up.gif\" /&gt; &lt;img alt=\"Move bottom row right\" src=\"images/moves/move-bottom-right.gif\" /&gt; &lt;img alt=\"Move bottom row right\" src=\"images/moves/move-bottom-right.gif\" /&gt; &lt;img alt=\"Move middle column down\" src=\"images/moves/move-middle-down.gif\" /&gt; &lt;img alt=\"Move bottom row right\" src=\"images/moves/move-bottom-right.gif\" /&gt; &lt;img alt=\"Move bottom row right\" src=\"images/moves/move-bottom-right.gif\" /&gt; &lt;img alt=\"Move middle column up\" src=\"images/moves/move-middle-up.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;br /&gt;"
+		+ "&lt;hr /&gt;"
+		+ "&lt;span&gt;Dedmore Fish Pattern&lt;/span&gt;&lt;br /&gt;"
+		+ "&lt;span class=\"instructions\"&gt;Turn the cube upside down so the top is up, start with one unfinished side in front and the other on the left&lt;/span&gt;&lt;br /&gt;"
+		+ "&lt;img alt=\"Move middle column down\" src=\"images/moves/move-middle-down.gif\" /&gt; &lt;img alt=\"Move bottom row right\" src=\"images/moves/move-bottom-right.gif\" /&gt; &lt;img alt=\"Move middle column up\" src=\"images/moves/move-middle-up.gif\" /&gt; &lt;img alt=\"Move bottom row right\" src=\"images/moves/move-bottom-right.gif\" /&gt; &lt;img alt=\"Move middle column down\" src=\"images/moves/move-middle-down.gif\" /&gt; &lt;img alt=\"Move bottom row right\" src=\"images/moves/move-bottom-right.gif\" /&gt; &lt;img alt=\"Move bottom row right\" src=\"images/moves/move-bottom-right.gif\" /&gt; &lt;img alt=\"Move middle column up\" src=\"images/moves/move-middle-up.gif\" /&gt; &lt;img alt=\"Move bottom row right\" src=\"images/moves/move-bottom-right.gif\" /&gt; &lt;img alt=\"Move middle column down\" src=\"images/moves/move-middle-down.gif\" /&gt; &lt;img alt=\"Move bottom row right\" src=\"images/moves/move-bottom-right.gif\" /&gt; &lt;img alt=\"Move middle column up\" src=\"images/moves/move-middle-up.gif\" /&gt; &lt;img alt=\"Move bottom row right\" src=\"images/moves/move-bottom-right.gif\" /&gt; &lt;img alt=\"Move bottom row right\" src=\"images/moves/move-bottom-right.gif\" /&gt; &lt;img alt=\"Move entire cube left\" src=\"images/moves/move-cube-left.png\" /&gt;&lt;br /&gt;"
+		+ "&lt;span class=\"instructions\"&gt;Then do the middle move twice as follows&lt;/span&gt;&lt;br /&gt;"
+		+ "&lt;img alt=\"Move middle column down\" src=\"images/moves/move-middle-down.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move middle column up\" src=\"images/moves/move-middle-up.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move middle column down\" src=\"images/moves/move-middle-down.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move middle column up\" src=\"images/moves/move-middle-up.gif\" /&gt; &lt;img alt=\"Move middle column down\" src=\"images/moves/move-middle-down.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move middle column up\" src=\"images/moves/move-middle-up.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move middle column down\" src=\"images/moves/move-middle-down.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move middle column up\" src=\"images/moves/move-middle-up.gif\" /&gt;"
+		+ "&lt;hr /&gt;";
+	mainLayout.add(new HTML(html));
+	
+    // Return the main layout
+    return mainLayout;
+  }
+
+</pre>

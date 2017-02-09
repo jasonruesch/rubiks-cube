@@ -1,0 +1,48 @@
+<pre>  /**
+   * The constants used in this Content Widget.
+   */
+  public static interface CwConstants extends Constants,
+      ContentWidget.CwConstants {
+    String cwMoveNotationsDescription();
+
+    String cwMoveNotationsName();
+  }
+
+  /**
+   * An instance of the constants.
+   */
+  private CwConstants constants;
+
+  /**
+   * Initialize this example.
+   */
+  @Override
+  public Widget onInitialize() {
+    // Create the panel used to layout the content
+    FlowPanel mainLayout = new FlowPanel();
+    
+    String html = "&lt;div&gt;&lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; Move bottom row left&lt;br /&gt;"
+		+ "&lt;img alt=\"Move bottom row right\" src=\"images/moves/move-bottom-right.gif\" /&gt; Move bottom row right&lt;br /&gt;"
+		+ "&lt;img alt=\"Move center row left\" src=\"images/moves/move-center-left.gif\" /&gt; Move center row left&lt;br /&gt;"
+		+ "&lt;img alt=\"Move center row right\" src=\"images/moves/move-center-right.gif\" /&gt; Move center row right&lt;br /&gt;"
+		+ "&lt;img alt=\"Move top row left\" src=\"images/moves/move-top-left.gif\" /&gt; Move top row left&lt;br /&gt;"
+		+ "&lt;img alt=\"Move top row right\" src=\"images/moves/move-top-right.gif\" /&gt; Move top row right&lt;br /&gt;"
+		+ "&lt;img alt=\"Move front clockwise\" src=\"images/moves/move-front-clockwise.gif\" /&gt; Move front clockwise&lt;br /&gt;"
+		+ "&lt;img alt=\"Move entire cube left\" src=\"images/moves/move-cube-left.png\" /&gt; Move entire cube left&lt;br /&gt;"
+		+ "&lt;img alt=\"Move entire cube right\" src=\"images/moves/move-cube-right.png\" /&gt; Move entire cube right&lt;/div&gt;"
+		+ "&lt;div&gt;&lt;img alt=\"Move left column down\" src=\"images/moves/move-left-down.gif\" /&gt; Move left column down&lt;br /&gt;"
+		+ "&lt;img alt=\"Move left column up\" src=\"images/moves/move-left-up.gif\" /&gt; Move left column up&lt;br /&gt;"
+		+ "&lt;img alt=\"Move middle column down\" src=\"images/moves/move-middle-down.gif\" /&gt; Move middle column down&lt;br /&gt;"
+		+ "&lt;img alt=\"Move middle column up\" src=\"images/moves/move-middle-up.gif\" /&gt; Move middle column up&lt;br /&gt;"
+		+ "&lt;img alt=\"Move right column down\" src=\"images/moves/move-right-down.gif\" /&gt; Move right column down&lt;br /&gt;"
+		+ "&lt;img alt=\"Move right column up\" src=\"images/moves/move-right-up.gif\" /&gt; Move right column up&lt;br /&gt;"
+		+ "&lt;img alt=\"Move front counter-clockwise\" src=\"images/moves/move-front-counter-clockwise.gif\" /&gt; Move front counter-clockwise&lt;br /&gt;"
+		+ "&lt;img alt=\"Move entire cube down\" src=\"images/moves/move-cube-down.png\" /&gt; Move entire cube down&lt;br /&gt;"
+		+ "&lt;img alt=\"Move entire cube up\" src=\"images/moves/move-cube-up.png\" /&gt; Move entire cube up&lt;/div&gt;";
+    mainLayout.add(new HTML(html));
+
+    // Return the main layout
+    return mainLayout;
+  }
+
+</pre>

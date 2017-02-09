@@ -1,0 +1,31 @@
+<pre>  /**
+   * The constants used in this Content Widget.
+   */
+  public static interface CwConstants extends Constants,
+      ContentWidget.CwConstants {
+    String cwStep1Description();
+
+    String cwStep1Name();
+  }
+
+  /**
+   * An instance of the constants.
+   */
+  private CwConstants constants;
+
+  /**
+   * Initialize this example.
+   */
+  @Override
+  public Widget onInitialize() {
+    // Create the panel used to layout the content
+    FlowPanel mainLayout = new FlowPanel();
+    
+    Image image = new Image("images/steps/step-1.jpg");
+	mainLayout.add(image);
+
+    // Return the main layout
+    return mainLayout;
+  }
+
+</pre>

@@ -1,0 +1,44 @@
+<pre>  /**
+   * The constants used in this Content Widget.
+   */
+  public static interface CwConstants extends Constants,
+      ContentWidget.CwConstants {
+    String cwStep3Description();
+
+    String cwStep3Name();
+  }
+
+  /**
+   * An instance of the constants.
+   */
+  private CwConstants constants;
+
+  /**
+   * Initialize this example.
+   */
+  @Override
+  public Widget onInitialize() {
+    // Create the panel used to layout the content
+    FlowPanel mainLayout = new FlowPanel();
+
+    Image image = new Image("images/steps/step-3.jpg");
+	mainLayout.add(image);
+	
+	String html = "&lt;hr /&gt;"
+		+ "&lt;img alt=\"One\" src=\"images/1.gif\" /&gt; &lt;img alt=\"Move middle column down\" src=\"images/moves/move-middle-down.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move middle column up\" src=\"images/moves/move-middle-up.gif\" /&gt; &lt;br /&gt;"
+		+ "&lt;hr /&gt;"
+		+ "&lt;img alt=\"Two\" src=\"images/2.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move middle column down\" src=\"images/moves/move-middle-down.gif\" /&gt; &lt;img alt=\"Move bottom row right\" src=\"images/moves/move-bottom-right.gif\" /&gt; &lt;img alt=\"Move middle column up\" src=\"images/moves/move-middle-up.gif\" /&gt; &lt;br /&gt;"
+		+ "&lt;hr /&gt;"
+		+ "&lt;img alt=\"Three\" src=\"images/3.gif\" /&gt; &lt;img alt=\"Move center row right\" src=\"images/moves/move-center-right.gif\" /&gt; &lt;img alt=\"Move front clockwise\" src=\"images/moves/move-front-clockwise.gif\" /&gt; &lt;img alt=\"Move center row left\" src=\"images/moves/move-center-left.gif\" /&gt; &lt;img alt=\"Move front counter-clockwise\" src=\"images/moves/move-front-counter-clockwise.gif\" /&gt; &lt;br /&gt;"
+		+ "&lt;hr /&gt;"
+		+ "&lt;img alt=\"Four\" src=\"images/4.gif\" /&gt; &lt;img alt=\"Move center row right\" src=\"images/moves/move-center-right.gif\" /&gt; &lt;img alt=\"Move front counter-clockwise\" src=\"images/moves/move-front-counter-clockwise.gif\" /&gt; &lt;img alt=\"Move center row left\" src=\"images/moves/move-center-left.gif\" /&gt; &lt;img alt=\"Move center row left\" src=\"images/moves/move-center-left.gif\" /&gt; &lt;img alt=\"Move front clockwise\" src=\"images/moves/move-front-clockwise.gif\" /&gt; &lt;br /&gt;"
+		+ "&lt;hr /&gt;"
+		+ "&lt;img alt=\"Five\" src=\"images/5.gif\" /&gt; &lt;img alt=\"Move middle column down\" src=\"images/moves/move-middle-down.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move middle column up\" src=\"images/moves/move-middle-up.gif\" /&gt; &lt;img alt=\"Move bottom row left\" src=\"images/moves/move-bottom-left.gif\" /&gt; &lt;img alt=\"Move middle column down\" src=\"images/moves/move-middle-down.gif\" /&gt; &lt;img alt=\"Move bottom row right\" src=\"images/moves/move-bottom-right.gif\" /&gt; &lt;img alt=\"Move middle column up\" src=\"images/moves/move-middle-up.gif\" /&gt;"
+		+ "&lt;hr /&gt;";
+	mainLayout.add(new HTML(html));
+	
+    // Return the main layout
+    return mainLayout;
+  }
+
+</pre>

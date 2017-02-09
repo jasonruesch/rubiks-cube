@@ -1,0 +1,73 @@
+/**
+ * Applied to the main layout of the page.
+ */
+.Application-Reference-dark-rtl { 
+  height: 5px;
+  width: 5px;
+  zoom: 1;
+}
+.Application-top {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.Application-title {
+  padding: 0px 10px 0px 0px;
+}
+.Application-title h1 {
+  color: #67A7E3;
+  margin: 0px;
+  padding: 0px 4px 0px 0px;
+  font-size: 22px;
+}
+.Application-title h2 {
+  color: #888;
+  margin: 0px;
+  padding: 0px 4px 0px 0px;
+  font-size: 16px;
+}
+.Application-links {
+  padding: 2px 0px 2px 13px;
+  background: #888888;
+}
+.Application-links .gwt-HTML{
+  font-size: 12px;
+}
+.Application-options {
+  padding: 6px 0px 0px 10px;
+}
+.Application-options .gwt-ListBox {
+  width: 150px;
+  font-size: 11px;
+  color: blue;
+  margin-right: 4px;
+}
+.Application-options td {
+  font-size: 12px;
+}
+.Application-options .gwt-ToggleButton {
+  width: 36px;
+  height: 16px;
+  margin: 3px 10px 0px 0px;
+  padding: 0px;
+}
+.Application-options .gwt-ToggleButton-down,
+.Application-options .gwt-ToggleButton-down-hovering {
+  cursor: default;
+}
+.Application-options .sc-ThemeButton-standard {
+  background: #d0e4f6;
+}
+.Application-options .sc-ThemeButton-chrome {
+  background: #ccc;
+}
+.Application-options .sc-ThemeButton-dark {
+  background: #3d3d3d;
+}
+.Application-menu {
+  width: 10em;
+  text-align: right;
+}
+
+/**
+ * Applied to widgets in the content area.
+ */
